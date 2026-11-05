@@ -4,8 +4,8 @@
 # Endringer: fjernet alt fra attack metoden og lagde ny metode kalt take_damage i stedet
 # Nå vil attack gjøre at target mister hp (liv) uten å endre _hp
 # La også til en heal() metode som legger til x antall hp til karakteren
+# Lagde en is_alive property som returnerer en boolsk verdi (true/false) avhengig av om hp er over/under 0
 # Har ikke dobbeltsjekket dette med chatgpt så mulig noe er feil
-# Jeg rakk ikke legge til is_alive greia
 
 class Character:
     """Represents a character in the RPG"""
@@ -33,7 +33,7 @@ class Character:
     def take_damage(self, damage) -> None: 
         """Reduce the characters HP when taking damage"""
         self._hp -= damage
-        target._hp = max(target._hp, 0) # Character hp cannot end up lower than 0
+        self._hp = max(self._hp, 0) # Character hp cannot end up lower than 0
 
 # Denne er ny
     def heal(self, amount) -> None:
@@ -57,3 +57,9 @@ class Character:
     def hp(self) -> int:
         """Public read-only property to inspect HP without allowing direct, unsafe edits."""
         return self._hp
+
+# Denne er ny
+    @property
+    def is_alive(self) -> bool:
+        """Return True if character is alive, False otherwise."""
+        return self._hp > 0
