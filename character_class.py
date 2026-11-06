@@ -30,7 +30,7 @@ class Character:
         target.take_damage(self.damage)
 
 # Denne er ny
-    def take_damage(self, damage) -> None: 
+    def take_damage(self, damage: int) -> None: 
         """Reduce the characters HP when taking damage"""
         self._hp -= damage
         self._hp = max(self._hp, 0) # Character hp cannot end up lower than 0
@@ -40,7 +40,7 @@ class Character:
         """Restore HP"""
         self._hp += amount
         self._hp = min(self._hp, self._hp_max) # Character cannot heal more than max hp
-
+                                # Chat mente at vi burde bruke self.hp_max, ettersom det er det vi har som attributt 
     def introduce(self) -> None:
         """Creates string that introduces character"""
         print(f"Hi, my name is {self.name}!")
