@@ -7,6 +7,7 @@
 # Lagde en is_alive property som returnerer en boolsk verdi (true/false) avhengig av om hp er over/under 0
 # Har ikke dobbeltsjekket dette med chatgpt så mulig noe er feil
 
+
 class Character:
     """Represents a character in the RPG"""
 
@@ -21,7 +22,7 @@ class Character:
         """
         self.name = name
         self._hp = hp_max  # Note: _hp indicated private attribute
-        self.hp_max = hp_max
+        self.hp_max = hp_max # Burde denne også være en private attribute?
         self.damage = damage
 
 # Denne er endret
