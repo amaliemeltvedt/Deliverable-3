@@ -48,4 +48,4 @@ class Dice:
         return self.roll() 
 
 
-d1 = Dice(sides=1)
+#d1 = Dice(sides=1)
