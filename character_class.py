@@ -59,6 +59,11 @@ class Character:
         """Public read-only property to inspect HP without allowing direct, unsafe edits."""
         return self._hp
 
+    @property
+    def is_alive(self) -> bool:
+        """Return True if character is alive, False otherwise."""
+        return self._hp > 0
+
 # Denne er ny
     @property
     def is_alive(self) -> bool:

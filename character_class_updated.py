@@ -25,7 +25,7 @@ class Character:
         """
         self.name = name
         self._hp = hp_max  # Note: _hp indicated private attribute
-        self.hp_max = hp_max # Burde denne også være en private attribute?
+        self._hp_max = hp_max # Burde denne også være en private attribute?
         self.damage = damage
         self.weapon = weapon
 
@@ -75,6 +75,10 @@ class Character:
         """Public read-only property to inspect HP without allowing direct, unsafe edits."""
         return self._hp
 
+    @property
+    def hp_max(self) -> int:
+        """Public read-only property for maximum HP."""
+        return self._hp_max
 
     @property
     def is_alive(self) -> bool:
