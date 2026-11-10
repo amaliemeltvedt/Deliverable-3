@@ -5,6 +5,7 @@
 from character_class_4 import Character, Warrior, Mage
 from items import Weapon
 from dice_class import Dice
+from battle_class import Battle
 import random
 
 print("Welcome to this RPG battle simulator!")
@@ -48,5 +49,10 @@ enemies = [
 enemy = random.choice(enemies)
 
 # Test
-print(hero)
-print(f"Your enemy is {enemy}")
+battle = Battle(hero, enemy)
+
+battle.simulate_battle()
+
+print(hero.hp)
+print(enemy.hp)
+print(hero.mana)
