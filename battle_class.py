@@ -12,15 +12,15 @@ class Battle:
 
         self.hero.attack(self.enemy)
 
-        if self.enemy.is_alive():
+        if self.enemy.is_alive:
             self.enemy.attack(self.hero)
 
     def simulate_battle(self) -> None:
         """Simulate the battle until one character is no longer alive"""
-        while self.hero.is_alive() and self.enemy.is_alive():
+        while self.hero.is_alive and self.enemy.is_alive:
             self.play_round()
 
-        if self.hero.is_alive():
+        if self.hero.is_alive:
             print(f"{self.hero.name} has won the battle!")
 
         else:
