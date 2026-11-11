@@ -1,6 +1,7 @@
+
 import random
 
-# Creates a dice class 
+# Creates a Dice class that can create a dice with a specified number of sides 
 class Dice:
     """Represents a dice with n sides"""
 
@@ -12,12 +13,14 @@ class Dice:
             sides (int): Number of sides on the dice (default = 6).
                          Must be at least 2.
         """
+        # Checks if the dice has at least 2 sides, raises an error if not
         if sides < 2:
             raise ValueError("A dice must have at least 2 sides.")
         
-        # Saves the number of sides as an attribute in the object
+        # Stores the number of sides as an attribute of the object
         self.sides = sides
 
+    # Creates a method to roll the dice 
     def roll(self) -> int:
         """
         Roll the dice and return a random number.
@@ -27,7 +30,7 @@ class Dice:
         """
         return random.randint(1, self.sides)
 
-    # Defines how the dice object should be represented as a string
+    # Defines how a Dice object is represented when printed
     def __repr__(self) -> str:
         """
         Return a string representation of the dice object.
@@ -37,7 +40,7 @@ class Dice:
         """
         return f"Dice(sides={self.sides})"
 
-    # This special method makes it possible to use the dice object as a function
+    # This special method makes it possible to use the Dice object as a function
     def __call__(self) -> int:
         """
         Allow the dice object to be called like a function.
@@ -46,6 +49,3 @@ class Dice:
             int: The result of rolling the dice.
         """
         return self.roll() 
-
-
-#d1 = Dice(sides=1)
