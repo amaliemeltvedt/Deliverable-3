@@ -15,8 +15,8 @@ class Character:
 
         Args:
             name (str): The name of the character.
-            hp_max (int): Max hit points (default = 100)
-            damage (int): Damage dealt when character attacks (default = 10)
+            hp_max (int): Max hit points (default = 100).
+            damage (int): Damage dealt when character attacks (default = 10).
             weapon (Weapon | None): The weapon of the character, if it has one.
         """
         self.name = name
