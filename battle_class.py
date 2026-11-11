@@ -27,8 +27,15 @@ class Battle:
         if self.enemy.is_alive:
             self.enemy.attack(self.hero)
 
+        # Printing the result of each round
+        print(f"After round: {self.hero.name} HP: {self.hero.hp}, {self.enemy.name} HP: {self.enemy.hp}")
+
     def simulate_battle(self) -> None:
         """Simulate the battle until one character is no longer alive"""
+
+        # Adding some interactivity
+        # For some reason it does not show in ipynb file
+        input("Press Enter to initiate battle.")
 
         # Loop continues as long as both are alive
         while self.hero.is_alive and self.enemy.is_alive:
