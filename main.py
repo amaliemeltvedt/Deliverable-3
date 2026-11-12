@@ -2,7 +2,7 @@
 # Men nå får vi teste om det fungerer
 
 # Vi har ikke battle class enda så har ikke lagt det til
-from character_class_4 import Character, Warrior, Mage
+from character_class import Character, Warrior, Mage
 from items import Weapon
 from dice_class import Dice
 from battle_class import Battle
