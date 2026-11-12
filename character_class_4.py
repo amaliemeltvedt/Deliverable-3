@@ -1,15 +1,18 @@
 # Imports the Weapon class 
 from items import Weapon
 
+# Creating the Character class
 class Character:
     """Represents a character in the RPG"""
 
-    def __init__(self, 
-                 name: str, 
-                 hp_max: int = 100, 
-                 damage: int = 10,
-                 weapon: Weapon | None = None 
-                 ) -> None:
+    # Initialises the character's attributes when a new object is created
+    def __init__(
+            self, 
+            name: str, 
+            hp_max: int = 100, 
+            damage: int = 10,
+            weapon: Weapon | None = None 
+    ) -> None:
         """
         Initialise the Character 
 
@@ -62,10 +65,12 @@ class Character:
         """Representation of character object"""
         return f"<Character name={self.name} hp={self.hp} damage={self.damage}>"
 
+    # Creates a more user-friendly string representation of the character 
     def __str__(self) -> str:
         """String representation of character object"""
         return f"Character: {self.name} with {self.hp} HP and {self.damage} damage"
 
+    # Uses properties to provide read-only access to the character's HP attributes
     @property
     def hp(self) -> int:
         """Public read-only property to inspect HP without allowing direct, unsafe edits."""
@@ -76,7 +81,7 @@ class Character:
         """Public read-only property for maximum HP."""
         return self._hp_max
 
-    # Added a read-only property to check wether the character is alive
+    # Added a read-only property to check whether the character is alive
     @property
     def is_alive(self) -> bool:
         """Return True if character is alive, False otherwise."""
@@ -86,13 +91,14 @@ class Character:
 class Warrior(Character):
     """Represents the Warrior subclass in the RPG"""
 
-    def __init__(self,
-                name: str,
-                hp_max: int = 100,
-                damage: int = 10,
-                weapon: Weapon | None = None,
-                armor: int = 5
-                ) -> None:
+    def __init__(
+            self,
+            name: str,
+            hp_max: int = 100,
+            damage: int = 10,
+            weapon: Weapon | None = None,
+            armor: int = 5
+    ) -> None:
 
         """
         Initialise the Warrior
@@ -119,14 +125,15 @@ class Warrior(Character):
 class Mage(Character):
     """Represents the Mage subclass in the RPG"""
 
-    def __init__(self,
-                name: str,
-                hp_max: int = 100,
-                damage: int = 10,
-                weapon: Weapon | None = None,
-                mana: int = 30,
-                mana_max: int = 30
-                ) -> None:
+    def __init__(
+            self,
+            name: str,
+            hp_max: int = 100,
+            damage: int = 10,
+            weapon: Weapon | None = None,
+            mana: int = 30,
+            mana_max: int = 30
+    ) -> None:
 
         """
         Initialise the Mage

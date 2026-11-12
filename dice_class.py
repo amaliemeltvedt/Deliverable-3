@@ -5,7 +5,10 @@ import random
 class Dice:
     """Represents a dice with n sides"""
 
-    def __init__(self, sides: int = 6) -> None:
+    def __init__(
+            self, 
+            sides: int = 6
+    ) -> None:
         """
         Initialise a dice object.
         

@@ -7,8 +7,11 @@ from dice_class import Dice
 class Weapon:
     """Represents a weapon that deals damage using a dice."""
 
-    def __init__(self, name: str, 
-                 damage_dice: Dice) -> None:
+    def __init__(
+            self, 
+            name: str, 
+            damage_dice: Dice
+    ) -> None:
         """
         Initialise a weapon object.
 
