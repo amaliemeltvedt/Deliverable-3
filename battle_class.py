@@ -1,5 +1,5 @@
 # Imports the Character class 
-from character_class_4 import Character
+from character_class import Character, Mage
 
 
 # Creating the Battle class
@@ -31,6 +31,17 @@ class Battle:
         # The enemy only attacks if it is still alive
         if self.enemy.is_alive:
             self.enemy.attack(self.hero)
+
+        # Printing the result of each round
+        print(f"After round: {self.hero.name} HP: {self.hero.hp}, {self.enemy.name} HP: {self.enemy.hp}")
+
+        # Print remaining mana if a Character is a Mage
+        if isinstance(self.hero, Mage):
+            print(f"{self.hero.name} Mana: {self.hero.mana}")
+
+        if isinstance(self.enemy, Mage):
+            print(f"{self.enemy.name} Mana: {self.enemy.mana}")
+
 
     # Creates a method to simulate the battle until one character is no longer alive
     def simulate_battle(self) -> None:
