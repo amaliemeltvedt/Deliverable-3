@@ -1,0 +1,45 @@
+*   7cd2d4d - Maren Johanne Borgaas, 5 minutes ago : Merge branch 'main' of https://github.com/amaliemeltvedt/Deliverable-3
+|\  
+| * b2f0ecc - Amalie Kristine Meltvedt, 17 hours ago : grammar fix
+| * aff823b - Amalie Kristine Meltvedt, 18 hours ago : grammar fix
+* | ee4d596 - Maren Johanne Borgaas, 5 minutes ago : pdf
+|/  
+* ddf6380 - Maren Johanne Borgaas, 23 hours ago : Added text in notebook
+* 9618885 - Maren Johanne Borgaas, 23 hours ago : deleted files, added print mana in battle class
+* 5da677b - Amalie Kristine Meltvedt, 24 hours ago : replaced with copy to restore original file
+*   23150c4 - Amalie Kristine Meltvedt, 24 hours ago : Merge branch 'main' of https://github.com/amaliemeltvedt/Deliverable-3
+|\  
+| * af6e8be - Maren Johanne Borgaas, 24 hours ago : changes?
+* | 4c62366 - Amalie Kristine Meltvedt, 24 hours ago : removed a norwegian comment
+|/  
+* aaa027f - Amalie Kristine Meltvedt, 24 hours ago : changed variable names
+* e39b9ce - Maren Johanne Borgaas, 25 hours ago : Added comments controll PEP8
+* 55a7cd3 - Maren Johanne Borgaas, 2 days ago : battle with weapon
+* 7cfb307 - Amalie Kristine Meltvedt, 2 days ago : removed a line
+* 783c7bf - Amalie Kristine Meltvedt, 2 days ago : added some prints
+* 6947fde - Amalie Kristine Meltvedt, 2 days ago : wrote about battle class
+* 5eb6329 - Maren Johanne Borgaas, 2 days ago : PEP8 items
+* 920ee65 - Amalie Kristine Meltvedt, 2 days ago : described the subclasses
+* a5cb8b5 - Maren Johanne Borgaas, 2 days ago : added comments dice and items
+* 844773f - Amalie Kristine Meltvedt, 2 days ago : test
+*   b35a665 - Maren Johanne Borgaas, 2 days ago : Merge branch 'main' of https://github.com/amaliemeltvedt/Deliverable-3
+|\  
+| * 2c02231 - Amalie Kristine Meltvedt, 2 days ago : added doc string and comments
+| * 342423d - Amalie Kristine Meltvedt, 2 days ago : added comments and doc strings
+* | a002516 - Maren Johanne Borgaas, 2 days ago : displayed weapon class
+|/  
+* da9a4ad - Maren Johanne Borgaas, 3 days ago : diplayed the class methods
+* b992289 - Amalie Kristine Meltvedt, 3 days ago : displayed the character methods
+* 9a5c3e0 - Amalie Kristine Meltvedt, 3 days ago : added requirements
+* 7a8044d - Amalie Kristine Meltvedt, 3 days ago : started writing task 1
+* 045f05f - Amalie Kristine Meltvedt, 3 days ago : test file complete
+* cb9fea4 - Maren Johanne Borgaas, 3 days ago : task 5 updated
+* 7266ac5 - Maren Johanne Borgaas, 3 days ago : Task 5
+* 513fb58 - Amalie Kristine Meltvedt, 4 days ago : made a main file to test the classes
+* fcb5eb3 - Amalie Kristine Meltvedt, 4 days ago : solved task 4
+* 3c6ee70 - Maren Johanne Borgaas, 5 days ago : Task 3
+* 22f0fa8 - Maren Johanne Borgaas, 7 days ago : dice class
+* 75ef464 - Amalie Kristine Meltvedt, 8 days ago : finished task 1
+* 942e9bf - Amalie Kristine Meltvedt, 9 days ago : started task 1
+* 20056c4 - Maren Johanne Borgaas, 9 days ago : game simulator 1
+* 2a0a2c2 - amaliemeltvedt, 9 days ago : Initial commit
